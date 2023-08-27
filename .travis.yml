@@ -1,5 +1,8 @@
 language: csharp
 dotnet: 3.1
+solution: TestDeploy.sln
+mono: none
+
 sudo: required
 services:
   - docker
