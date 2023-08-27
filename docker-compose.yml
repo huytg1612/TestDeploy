@@ -1,0 +1,9 @@
+version: '3'
+services:
+  testdeploy:
+    build:
+      context: .
+      dockerfile: TestDeploy/Dockerfile
+    ports:
+      - "16129:80"
+    command: ["dotnet", "TestDeploy.dll"]
