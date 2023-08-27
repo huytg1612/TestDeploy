@@ -16,10 +16,10 @@ scripts:
 deploy:
   provider: elasticbeanstalk
   region: "ap-southeast-1"
-  app: "TestDeploy"
-  env: "TestDeploy-env"
+  app: "DotnetDeploy"
+  env: "DotnetDeploy-env"
   bucket_name: "elasticbeanstalk-ap-southeast-1-560176329885"
-  bucket_path: "TestDeploy"
+  bucket_path: "DotnetDeploy"
   access_key_id: "$ACCESS_KEY"
   secret_access_key: "$SECRET_KEY"
   on:
