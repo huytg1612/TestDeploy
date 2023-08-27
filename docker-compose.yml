@@ -4,7 +4,8 @@ services:
     build:
       context: .
       dockerfile: TestDeploy/Dockerfile
-    ports:
-      - "80:80"
-      - "443:443"
+    # ports:
+    #   - "16129:80"
+      ports:
+        - "80:80"
     command: ["dotnet", "TestDeploy.dll"]
