@@ -14,5 +14,13 @@ scripts:
   - dotnet restore
 
 deploy:
+  provider: elasticbeanstalk
+  region: "ap-southeast-1"
+  app: "TestDeploy"
+  env: "TestDeploy-env"
+  bucket_name: "elasticbeanstalk-ap-southeast-1-560176329885"
+  bucket_path: "TestDeploy"
+  access_key_id: "$ACCESS_KEY"
+  secret_access_key: "$SECRET_KEY"
   on:
     branch: master

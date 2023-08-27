@@ -6,4 +6,6 @@ services:
       dockerfile: TestDeploy/Dockerfile
     # ports:
     #   - "16129:80"
+      ports:
+        - "80:80"
     command: ["dotnet", "TestDeploy.dll"]
