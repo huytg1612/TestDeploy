@@ -6,7 +6,7 @@ before_install:
   - docker build -f TestDeploy/Dockerfile -t testdeploy .
 
 scripts:
-  - docker run -e CI=true testdeploy
+  - docker run -e CI=true testdeploy dotnet test
 
 deploy:
   on:
