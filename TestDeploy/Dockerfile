@@ -9,4 +9,5 @@ COPY --from=build /App/out .
 # ENV ASPNETCORE_URLS=http://*:5000
 # ENV ASPNETCORE_ENVIRONMENT=”development”
 # EXPOSE 5000
+EXPOSE 80
 ENTRYPOINT [ "dotnet", "TestDeploy.dll" ]
